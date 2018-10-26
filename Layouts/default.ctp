@@ -22,6 +22,7 @@
 	
 	<!-- CSS
 	================================================== -->
+   <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
    <?= $this->Html->css('bootstrap.css') ?>
    <?= $this->Html->css('main.css') ?>
    <?= $this->Html->css('animate.min.css') ?>
