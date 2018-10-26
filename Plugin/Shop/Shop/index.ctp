@@ -50,7 +50,7 @@
 					  $newRow = ( ( $i % ( (12 / $col) ) ) == 0); ?>
 					<div class="col-sm-<?= $col ?> col-lg-<?= $col ?> col-md-<?= $col ?>">
 						<div class="well" style="" >
-							<center><?php if(isset($v['Item']['img_url'])) { ?><img src="<?= $v['Item']['img_url'] ?>" alt=""><?php } ?></center>
+							<center><?php if(isset($v['Item']['img_url'])) { ?><img class="img-responsive" style="max-height: 200px; min-height: 200px; margin-right: auto; max-width: 100%; display: block; margin-left: auto;" src="<?= $v['Item']['img_url'] ?>" alt=""><?php } ?></center>
 							<div class="caption" style="height:auto;">
 								<center><h4><b><?= before_display($v['Item']['name']) ?><br>
 								<font color="red"><strike><?= $v['Item']['price_old'] ?></font></strike> 
