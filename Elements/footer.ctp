@@ -19,10 +19,10 @@
 								<h4 class="widget-title">Statistiques</h4>
 								<div class="widget-body">
 									<ul class="info-list">
-										<li><i class="fa fa-angle-double-right"></i> Inscrits aujourd'hui : <b><?php $u = ClassRegistry::init('User'); ?><?= $u->find('count', array('conditions' => array('created LIKE' => date('Y-m-d').'%'))); ?></b></li>
-										<li><i class="fa fa-angle-double-right"></i> Visites du jour : <b><?php $v = ClassRegistry::init('Visit'); ?><?= $v->getVisitsByDay(date('Y-m-d'))['count']; ?></b></li>
+										<li><i class="fa fa-angle-double-right"></i> Inscrits aujourd'hui : <b><?= $users_count_today ?></b></li>
+										<li><i class="fa fa-angle-double-right"></i> Visites du jour : <b><?= $visits_count_today ?></b></li>
 										<li><i class="fa fa-angle-double-right"></i> Achats en boutique : <b><?php if($EyPlugin->isInstalled('eywek.shop')) { ?><?= ClassRegistry::init('Shop.ItemsBuyHistories')->find('count') ?><?php } ?></b></li>
-										<li><i class="fa fa-angle-double-right"></i> Dernier inscrit : <b><?php $userLast = ClassRegistry::init('Users')->find('first', array('order' =>'created DESC')); echo $userLast['Users']['pseudo'] ?></b></li>
+										<li><i class="fa fa-angle-double-right"></i> Dernier inscrit : <b><?= $users_last['pseudo'] ?></b></li>
 									</ul>
 								</div>
 							</div>
