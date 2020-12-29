@@ -44,10 +44,6 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                         <input type="text" class="form-control" name="ip_server" value="<?= $config['ip_server'] ?>">
                                     </div>
 									<div class="form-group">
-                                        <label><?= $Lang->get('THEME__FAVICON_URL') ?></label>
-                                        <input type="text" class="form-control" name="favicon_url" value="<?= $config['favicon_url'] ?>">
-                                    </div>
-									<div class="form-group">
                                         <label>Message dans la banniere #1</label>
                                         <input type="text" class="form-control" name="header_text_1" value="<?= $config['header_text_1'] ?>">
                                     </div>
