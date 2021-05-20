@@ -13,10 +13,10 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
             <div class="col-md-12">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_accueil" data-toggle="tab">Accueil</a></li>
-						<li><a href="#rab_infobox" data-toggle="tab">InfoBox</a></li>
-                        <li><a href="#tab_footer" data-toggle="tab">Footer</a></li>
-                        <li><a href="#tab_other" data-toggle="tab">Autres options</a></li>
+                        <li class="active"><a class="nav-link text-dark" href="#tab_accueil" data-toggle="tab">Accueil</a></li>
+						<li><a href="#rab_infobox" class="nav-link text-dark" data-toggle="tab">InfoBox</a></li>
+                        <li><a href="#tab_footer" class="nav-link text-dark" data-toggle="tab">Footer</a></li>
+                        <li><a href="#tab_other" class="nav-link text-dark" data-toggle="tab">Autres options</a></li>
                     </ul>
                     <div class="tab-content" style="padding: 15px;">
                         <div class="tab-pane active" id="tab_accueil">
@@ -239,7 +239,7 @@ echo $this->Html->script('admin/tinymce/tinymce.min.js');
                                         <input type="text" class="form-control" name="url_da" value="<?= $config['url_da'] ?>">
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-5">
                                     <div class="form-group">
                                         <label>Texte récompense top voteur #1</label>
 										<p>Ajouter votre texte</p>
